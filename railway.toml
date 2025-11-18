@@ -1,6 +1,30 @@
+# ==========================
+# Railpack Build Definition
+# ==========================
+
 [build]
 builder = "railpack"
 python_version = "3.12"
 
+# Required because your project uses pdf2image
+apt_packages = [
+    "poppler-utils"
+]
+
+requirements = "requirements.txt"
+
+
+# ==========================
+# Run / Start Command
+# ==========================
+
 [run]
 start = "python run.py"
+
+
+# ==========================
+# Environment Variables
+# ==========================
+
+[env]
+PYTHONUNBUFFERED = "1"
