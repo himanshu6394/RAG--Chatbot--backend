@@ -3,7 +3,7 @@
 # ==========================
 
 [build]
-builder = "railpack"
+builder = "Nixpacks"
 python_version = "3.12"
 
 # Required because your project uses pdf2image
