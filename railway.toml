@@ -1,7 +1,5 @@
 [build]
 builder = "railpack"
-
-[build]
 python_version = "3.12"
 
 [run]
